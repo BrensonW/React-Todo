@@ -25,7 +25,7 @@ const list = [
     id: 123456,
     completed: false,
   },
-]:
+];
 
 class App extends React.Component {
   constructor()
