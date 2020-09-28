@@ -28,13 +28,12 @@ const list = [
 ];
 
 class App extends React.Component {
-  constructor()
- {
+  constructor() {
    super();
    this.state = {
      list,
    };
- }
+  }
 
  // checking that item is completed
 

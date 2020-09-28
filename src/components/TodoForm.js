@@ -1,6 +1,6 @@
 import React from 'react';
 
-class TodoForm extends React.Componet {
+class TodoForm extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -20,7 +20,7 @@ class TodoForm extends React.Componet {
     submitForm = (e) => {
         e.preventDefault();
         this.setState({ item: ""});
-        this.pr.addItem(this.state.item);
+        this.props.addItem(this.state.item);
     };
 
     render() {

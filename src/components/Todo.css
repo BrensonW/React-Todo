@@ -131,15 +131,15 @@ table {
 /*   CSS FOR APP STARTS HERE   */
 
 body {
-  background-image: url("https://images.unsplash.com/photo-1543880624-c2c89de9d25e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60");
+  background-image: url("https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80");
   background-size: cover;
 }
 
 .App {
   font-family: sans-serif;
   text-align: center;
-  padding: 0 36px;
-  max-width: 665px;
+  padding: 0 35%;
+  min-width: 400px;
   margin: 0 auto;
 }
 
@@ -150,6 +150,9 @@ body {
 }
 h1 {
   text-align: center;
+  font-size: 36px;
+  margin-top: -25%;
+  margin-left: 40%;
 }
 
 .todo-list {
@@ -157,7 +160,7 @@ h1 {
   flex-flow: row wrap;
   justify-content: space-between;
   width: 100%;
-  margin: 0 auto;
+  margin: 50% auto;
 }
 .item {
   background-color: transparent;
@@ -165,29 +168,33 @@ h1 {
   text-align: left;
   color: black;
   margin: 10px;
-  padding: 10 px;
+  padding: 0;
   cursor: pointer;
+  font-size: 20px;
 }
 
-.item.completed {
+ .itemcompleted {
   background-color: transparent;
   text-decoration: line-through;
+  font-size: 20px;
 }
 form {
-  width: 50%;
+  width: 0;
   display: flex;
   justify-content: center;
+  margin-top: 50%;
+  margin-right: 30%;
 }
 form > input {
   background-color: transparent;
   border: 0;
-  padding: 6px 0;
+  padding: 7px 0;
   font-size: 1rem;
   width: 240px;
   outline: 0;
-  color: sienna;
-  border-bottom: 1px solid #8b4513;
-  margin-right: 15px;
+  color: #fa590f;
+  border-bottom: 1px solid #fa590f;
+  margin-right: 30px;
 }
 
 button {
@@ -200,7 +207,7 @@ button {
 }
 
 input::placeholder {
-  color: #8b4513;
+  color: #fa590f;
   opacity: 1;
 }
 
